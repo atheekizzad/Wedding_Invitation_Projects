@@ -1,0 +1,185 @@
+.verse-section {
+  padding: 25px 30px 0px;
+}
+
+.verse-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.verse-arabic {
+  font-family: "Scheherazade New", serif;
+  font-size: 2rem;
+  line-height: 2.2;
+  color: #f7d978;
+  margin-bottom: 5px;
+}
+
+.verse-translation {
+  max-width: 760px;
+  margin: 20px auto 20px;
+
+  font-family: "EB Garamond", serif;
+  font-size: 1.35rem;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  text-align: justify;
+  text-align-last: center;
+}
+
+.verse-line {
+  width: 220px;
+  height: 2px;
+
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+
+  margin: 25px auto 20px;
+}
+
+/* ==========================
+   LARGE DESKTOP 1400px+
+========================== */
+
+@media (min-width: 1400px) {
+  .verse-container {
+    max-width: 1100px;
+  }
+
+  .verse-arabic {
+    font-size: 2.3rem;
+  }
+
+  .verse-translation {
+    max-width: 850px;
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================
+   LAPTOP 1200px
+========================== */
+
+@media (max-width: 1200px) {
+  .verse-arabic {
+    font-size: 2.3rem;
+  }
+
+  .verse-translation {
+    font-size: 1.4rem;
+  }
+}
+/* ==========================
+   SMALL LAPTOP 1100px
+========================== */
+@media (max-width: 1100px) {
+  .verse-arabic {
+    font-size: 2.15rem;
+  }
+
+  .verse-translation {
+    font-size: 1.4rem;
+  }
+}
+/* ==========================
+   TABLET 900px
+========================== */
+
+@media (max-width: 900px) {
+  .verse-arabic {
+    font-size: 1.9rem;
+  }
+
+  .verse-translation {
+    font-size: 1.4rem;
+  }
+}
+/* ==========================
+   SMALL TABLET 800px
+========================== */
+@media (max-width: 800px) {
+  .verse-arabic {
+    font-size: 1.75rem;
+  }
+
+  .verse-translation {
+    font-size: 1.37rem;
+  }
+}
+/* ==========================
+   LARGE MOBILE 700px
+========================== */
+@media (max-width: 700px) {
+  .verse-arabic {
+    font-size: 1.6rem;
+  }
+
+  .verse-translation {
+    font-size: 1.2rem;
+  }
+}
+/* ==========================
+   MOBILE 600px
+========================== */
+
+@media (max-width: 600px) {
+  .verse-arabic {
+    font-size: 1.5rem;
+  }
+
+  .verse-translation {
+    font-size: 1.35rem;
+  }
+}
+/* ==========================
+   SMALL MOBILE 500px
+========================== */
+@media (max-width: 500px) {
+  .verse-arabic {
+    font-size: 1.4rem;
+  }
+
+  .verse-translation {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================
+   PHONE 400px
+========================== */
+@media (max-width: 400px) {
+  .verse-arabic {
+    font-size: 1.3rem;
+  }
+
+  .verse-translation {
+    font-size: 1.1rem;
+  }
+}
+/* ==========================
+   SMALL PHONE 380px
+========================== */
+
+@media (max-width: 380px) {
+  .verse-arabic {
+    font-size: 1.27rem;
+  }
+
+  .verse-translation {
+    font-size: 0.99rem;
+  }
+}
+/* ==========================
+   EXTRA SMALL 300px
+========================== */
+@media (max-width: 300px) {
+  .verse-arabic {
+    font-size: 0.95rem;
+  }
+
+  .verse-translation {
+    font-size: 0.75rem;
+  }
+}

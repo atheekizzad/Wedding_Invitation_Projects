@@ -1,0 +1,301 @@
+/* ===========================
+   DOWNLOAD SECTION
+=========================== */
+
+.download-section {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 0px 20px 55px;
+}
+
+/* ===========================
+   DOWNLOAD BUTTON
+=========================== */
+
+.download-btn {
+  position: relative;
+
+  width: 250px;
+  height: 60px;
+
+  border: 1px solid rgba(247, 217, 120, 0.8);
+
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #d4af37, #f7d978, #b8863b);
+
+  color: #3b1608;
+
+  font-family: "Lora", serif;
+
+  font-weight: 600;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition: all 0.4s ease;
+
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
+}
+
+/* ===========================
+   BUTTON SHINE EFFECT
+=========================== */
+
+.download-btn::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 80%;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  transform: skewX(-30deg);
+
+  transition: 0.7s;
+}
+
+.download-btn:hover::before {
+  left: 140%;
+}
+
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
+.download-btn:hover {
+  transform: translateY(-6px) scale(1.05);
+
+  box-shadow: 0 25px 50px rgba(212, 175, 55, 0.45);
+}
+
+/* ===========================
+   BUTTON CLICK
+=========================== */
+
+.download-btn:active {
+  transform: scale(0.96);
+}
+/* ===========================
+   DISABLED BUTTON STATE
+=========================== */
+.download-btn:disabled {
+  cursor: not-allowed;
+
+  background: linear-gradient(135deg, #c89f2e, #ddb85a, #a77a1f);
+
+  color: #5a340b;
+
+  border-color: rgba(247, 217, 120, 0.45);
+
+  box-shadow:
+    inset 0 2px 8px rgba(255, 255, 255, 0.18),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.18),
+    0 8px 20px rgba(212, 175, 55, 0.18);
+
+  transform: scale(0.98);
+
+  filter: saturate(0.9) brightness(0.96);
+
+  transition: all 0.35s ease;
+}
+
+.download-btn:disabled:hover {
+  transform: scale(0.98);
+
+  box-shadow:
+    inset 0 2px 8px rgba(255, 255, 255, 0.18),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.18),
+    0 8px 20px rgba(212, 175, 55, 0.18);
+}
+
+.download-btn:disabled::before {
+  display: none;
+}
+/* ===========================
+   LOADING CONTENT
+=========================== */
+
+.loading-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+/* ===========================
+   LOADING SPINNER
+=========================== */
+
+.spinner {
+  width: 18px;
+
+  height: 18px;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(59, 22, 8, 0.25);
+
+  border-top: 3px solid #3b1608;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===========================
+   DOWNLOAD DESCRIPTION
+=========================== */
+
+.download-description {
+  margin-top: 18px;
+
+  max-width: 525px;
+
+  text-align: center;
+
+  font-family: "EB Garamond", serif;
+
+  font-size: 1.2rem;
+
+  letter-spacing: 1px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  line-height: 1.6;
+}
+.download-btn > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Success gold check */
+.success-icon {
+  color: #d4af37;
+  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+
+  margin-right: 6px;
+
+  vertical-align: -3px;
+
+  display: inline-block;
+
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+}
+
+/* Download icon */
+.download-icon {
+  color: #d4af37;
+  font-size: 1.2rem;
+
+  width: 20px;
+  height: 20px;
+
+  margin-right: 6px;
+
+  vertical-align: -3px;
+
+  display: inline-block;
+
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+}
+
+/* Loading spinner */
+.loading-icon {
+  color: #d4af37;
+  font-size: 1.2rem;
+  animation: spin 1s linear infinite;
+
+  width: 20px;
+  height: 20px;
+
+  margin-right: 6px;
+
+  vertical-align: -3px;
+
+  display: inline-block;
+
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1400px) {
+  .download-btn {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .download-description {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .download-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .download-btn {
+    width: 220px;
+    height: 55px;
+    font-size: 0.9rem;
+  }
+
+  .download-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .download-btn {
+    width: 190px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  .download-description {
+    font-size: 0.9rem;
+  }
+}

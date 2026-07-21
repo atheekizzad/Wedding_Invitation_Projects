@@ -1,0 +1,808 @@
+.location-section {
+  padding: 20px 90px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Title */
+
+.location-section .section-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 4.4rem;
+  color: #f5d56f;
+  margin-bottom: 15px;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.location-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 0 10px; /* space from both side edges */
+  font-family: "EB Garamond", serif;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+
+  color: rgba(237, 237, 237, 0.9);
+
+  text-align: justify;
+  text-align-last: center;
+
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Layout */
+
+.location-container {
+  width: min(900px, calc(100% - 40px));
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* SAME SIZE BOTH BOXES */
+
+.location-card,
+.map-container {
+  width: 100%;
+  height: 450px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.location-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  padding: 40px 30px 40px 30px;
+
+  border-radius: 22px;
+
+  text-align: left;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  transition: 0.4s;
+
+  overflow: hidden;
+}
+
+.location-card:hover {
+  border-color: #f7d978;
+
+  box-shadow: 0 20px 45px rgba(212, 175, 55, 0.25);
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.info-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 0;
+}
+
+.info-item > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.info-item svg {
+  width: 42px;
+
+  height: 42px;
+
+  padding: 10px;
+
+  border-radius: 50%;
+
+  background: rgba(212, 175, 55, 0.15);
+
+  border: 1px solid rgba(247, 217, 120, 0.4);
+
+  color: #f7d978;
+
+  flex-shrink: 0;
+}
+
+.info-item h5 {
+  font-family: "Cinzel", serif;
+
+  color: #f7d978;
+
+  font-size: 1.15rem;
+
+  margin-top: 9px;
+
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-family: "Libre Baskerville", serif;
+
+  color: rgba(255, 255, 255, 0.886);
+
+  font-size: 0.9rem;
+
+  line-height: 1;
+
+  margin: 0;
+}
+
+.info-item small {
+  display: block;
+
+  margin-top: 8px;
+
+  font-family: "Libre Baskerville", serif;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  text-align: left;
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+/* ===========================
+   BUTTON
+=========================== */
+
+.direction-btn {
+  width: 220px;
+  height: 55px;
+
+  margin: 18px auto 0;
+
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #d4af37, #f7d978);
+
+  transition: 0.3s;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.direction-btn a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #3a031f;
+
+  text-decoration: none;
+
+  font-family: "EB Garamond", serif;
+
+  font-weight: 650;
+
+  font-size: 1.1rem;
+}
+
+.direction-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.35);
+}
+
+/* Map */
+
+.map-container {
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  backdrop-filter: blur(10px);
+
+  border: 3px solid rgba(213, 166, 10, 0.35);
+
+  transition: 0.4s;
+}
+
+.map-container iframe {
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+
+  display: block;
+
+  border-radius: 22px;
+}
+
+.map-container:hover {
+  border-color: #f7d978;
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.35);
+}
+/* ==========================
+   LARGE DESKTOP 1400px+
+========================== */
+
+@media (max-width: 1400px) {
+  .location-container {
+    width: min(900px, calc(100% - 80px));
+  }
+  .location-section .section-title {
+    font-size: 4rem;
+  }
+
+  .location-description {
+    font-size: 26px;
+  }
+}
+
+/* ==========================
+   LAPTOP 1200px
+========================== */
+
+@media (max-width: 1200px) {
+  .location-section {
+    padding: 20px 60px 60px;
+  }
+
+  .location-container {
+    gap: 25px;
+  }
+
+  .location-card,
+  .map-container {
+    height: 440px;
+  }
+
+  .location-card {
+    padding: 35px 25px;
+  }
+  .location-section .section-title {
+    font-size: 3.7rem;
+  }
+
+  .location-description {
+    font-size: 24px;
+  }
+}
+
+/* ==========================
+   SMALL LAPTOP 1100px
+========================== */
+
+@media (max-width: 1100px) {
+  .location-container {
+    width: min(850px, calc(100% - 60px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 430px;
+  }
+
+  .location-card {
+    padding: 30px 20px;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+}
+
+/* ==========================
+   TABLET 1030px
+========================== */
+
+@media (max-width: 1030px) {
+  .location-section {
+    padding: 20px 40px 60px;
+  }
+
+  .location-container {
+    width: min(850px, calc(100% - 60px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 420px;
+  }
+
+  .location-card {
+    padding: 35px 30px;
+  }
+}
+@media (max-width: 970px) {
+  .location-section {
+    padding: 20px 25px 60px;
+  }
+
+  .location-container {
+    width: min(850px, calc(100% - 60px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 400px;
+  }
+
+  .location-card {
+    padding: 30px 25px;
+  }
+
+  .info-item {
+    gap: 14px;
+  }
+
+  .direction-btn {
+    width: 220px;
+
+    height: 55px;
+  }
+}
+
+@media (max-width: 910px) {
+  .location-section {
+    padding: 20px 25px 60px;
+  }
+
+  .location-container {
+    width: min(850px, calc(100% - 60px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 415px;
+  }
+
+  .location-card {
+    padding: 30px 22px;
+  }
+
+  .info-item {
+    gap: 14px;
+  }
+
+  .direction-btn {
+    width: 220px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+}
+
+/* ==========================
+   TABLET 900px
+========================== */
+
+@media (max-width: 900px) {
+  .location-section {
+    padding: 20px 25px 34px;
+  }
+  .location-section .section-title {
+    font-size: 3.3rem;
+  }
+
+  .location-description {
+    font-size: 22px;
+  }
+
+  .location-container {
+    width: min(900px, calc(100% - 30px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 405px;
+  }
+
+  .location-card {
+    padding: 30px 16px 30px 16px;
+  }
+
+  .info-item {
+    gap: 14px;
+  }
+
+  .direction-btn {
+    width: 220px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+  .info-item small {
+    font-size: 0.834rem;
+  }
+  .location-container {
+    gap: 15px;
+  }
+}
+
+/* ==========================
+   TABLET 800px
+========================== */
+
+@media (max-width: 800px) {
+  .location-section {
+    padding: 20px 15px 34px;
+  }
+
+  .location-container {
+    width: min(700px, calc(100% - 60px));
+  }
+
+  .location-card,
+  .map-container {
+    height: 420px;
+  }
+
+  .location-card {
+    padding: 30px 16px 30px 16px;
+  }
+
+  .info-item {
+    gap: 14px;
+  }
+
+  .direction-btn {
+    width: 200px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+  .info-item small {
+    font-size: 0.9rem;
+  }
+  .location-container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .location-section {
+    padding: 20px 15px 34px;
+  }
+
+  .location-container {
+    width: min(650px, calc(100% - 30px));
+    grid-template-columns: 1fr; /* makes 2 rows */
+  }
+
+  .location-card,
+  .map-container {
+    height: 400;
+  }
+
+  .location-card {
+    padding: 45px 30px 30px 30px;
+    gap: 18px;
+  }
+
+  .info-item {
+    gap: 19px;
+  }
+
+  .direction-btn {
+    width: 220px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+  .info-item small {
+    font-size: 0.9rem;
+  }
+  .location-container {
+    gap: 15px;
+  }
+}
+
+/* ==========================
+   MOBILE 600px
+========================== */
+
+@media (max-width: 600px) {
+  .location-section {
+    padding: 15px 20px 24px;
+  }
+  .location-section .section-title {
+    font-size: 2.9rem;
+  }
+
+  .location-description {
+    font-size: 1.1rem;
+  }
+
+  .location-container {
+    max-width: 100%;
+  }
+
+  .location-card,
+  .map-container {
+    height: 380px;
+  }
+
+  .location-card {
+    padding: 25px 20px;
+    gap: 14px;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+
+  .info-item small {
+    font-size: 0.9rem;
+  }
+  .direction-btn {
+    width: 200px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+}
+@media (max-width: 513px) {
+  .location-section .section-title {
+    font-size: 2.3rem;
+  }
+
+  .location-description {
+    font-size: 1.09rem;
+  }
+}
+@media (max-width: 450px) {
+  .location-section {
+    padding: 15px 20px 24px;
+  }
+
+  .location-container {
+    max-width: 100%;
+  }
+
+  .location-card,
+  .map-container {
+    height: 390px;
+  }
+
+  .location-card {
+    padding: 25px 20px;
+    gap: 14px;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+
+  .info-item small {
+    font-size: 0.81rem;
+  }
+  .info-item h5 {
+    font-size: 1.05rem;
+  }
+  .info-item p {
+    font-size: 0.89rem;
+  }
+  .info-item svg {
+    width: 40px;
+
+    height: 40px;
+  }
+  .direction-btn {
+    width: 197px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+}
+
+@media (max-width: 412px) {
+  .location-section .section-title {
+    font-size: 2.1rem;
+  }
+
+  .location-description {
+    font-size: 1.06rem;
+  }
+}
+
+/* ==========================
+   EXTRA SMALL 380px
+========================== */
+
+@media (max-width: 380px) {
+  .location-section {
+    padding: 15px 15px 18px;
+  }
+
+  .location-section .section-title {
+    font-size: 2rem;
+  }
+
+  .location-description {
+    font-size: 1rem;
+  }
+  .location-card,
+  .map-container {
+    height: 380px;
+  }
+  .location-card {
+    padding: 25px 20px 20px 20px;
+    gap: 10px;
+  }
+  .info-item {
+    gap: 14px;
+  }
+
+  .info-item svg {
+    width: 37px;
+
+    height: 37px;
+  }
+  .direction-btn {
+    width: 194px;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 55px;
+  }
+}
+
+@media (max-width: 343px) {
+  .location-section {
+    padding: 15px 15px 17px;
+  }
+
+  .location-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .location-description {
+    font-size: 0.96rem;
+  }
+  .location-card,
+  .map-container {
+    height: 390px;
+  }
+  .location-card {
+    padding: 23px 20px 18px 20px;
+    gap: 6px;
+  }
+  .info-item {
+    gap: 14px;
+  }
+
+  .info-item svg {
+    width: 37px;
+
+    height: 37px;
+  }
+  .info-item small {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+  .info-item h5 {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 5px;
+  }
+  .info-item p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  .direction-btn {
+    width: 170px;
+    height: 50px;
+  }
+  .direction-btn a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 313px) {
+  .location-section {
+    padding: 15px 15px 16px;
+  }
+
+  .location-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .location-description {
+    font-size: 0.96rem;
+  }
+  .location-card,
+  .map-container {
+    height: 417px;
+  }
+  .location-card {
+    padding: 23px 20px 18px 20px;
+    gap: 6px;
+  }
+  .info-item {
+    gap: 14px;
+  }
+
+  .info-item svg {
+    width: 34px;
+
+    height: 34px;
+  }
+  .info-item small {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+  .info-item h5 {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .info-item p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  .direction-btn {
+    width: 170px;
+    height: 50px;
+  }
+  .direction-btn a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,672 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Scheherazade+New:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cover-all {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("../../assets/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 00px 00px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 950px;
+  padding: 60px 45px;
+  text-align: center;
+  color: white;
+}
+
+/* Arabic */
+
+.arabic-bismi {
+  font-family: "Scheherazade New", serif;
+  font-size: 2.3rem;
+  color: #f5d56f;
+  margin-bottom: 25px;
+  padding-bottom: 40px;
+}
+/*arab meaning*/
+
+.arab-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ddd;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+/* Intro */
+
+.invite-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #dddddd;
+  padding-bottom: 30px;
+  font-weight: bolder;
+}
+
+.host-title {
+  color: #f7d978;
+  font-size: 1.7rem;
+  font-family: "Cinzel", serif;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.host-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.9;
+  color: #eee;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.event-title {
+  color: #f7d978;
+  /*font-size: clamp(2.2rem, 8vw, 4.4rem);*/
+  font-size: 4.4rem;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+}
+
+/* Couple */
+
+.couple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.couple h2 {
+  font-size: 3.4rem;
+  font-family: "Great Vibes", cursive;
+  color: white;
+}
+.couple h2 span {
+  display: block;
+  font-family: "Nautilus Pompilius", cursive;
+  font-style: italic;
+  line-height: 1.4;
+  color: #f7d978;
+  font-size: 1.3rem;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.heart-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  color: #d4af37;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
+  font-size: 4rem;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.25);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Details */
+/* MIDDLE CONTENT */
+@font-face {
+  font-family: "Nautilus Pompilius";
+  src: url("../../assets/fonts/Nautilus.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.save-date-title {
+  text-align: center;
+
+  font-family: "Italiana", serif;
+
+  font-size: 1.8rem;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: #f7d978;
+
+  margin-bottom: 30px;
+
+  text-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+
+  position: relative;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 60px 0 30px;
+  align-items: stretch;
+}
+
+.detail-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+
+  padding: 28px 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  height: 150px;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.4s ease;
+}
+
+/* soft gold glow */
+.detail-card::before {
+  content: "";
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(212, 175, 55, 0.15);
+
+  filter: blur(40px);
+
+  top: -50px;
+  right: -50px;
+}
+
+/* hover luxury effect */
+.detail-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #f7d978;
+
+  box-shadow:
+    0 15px 35px rgba(212, 175, 55, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* icon */
+.detail-card svg {
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.25),
+    rgba(212, 175, 55, 0.05)
+  );
+
+  border: 1px solid rgba(247, 217, 120, 0.6);
+
+  border-radius: 50%;
+
+  padding: 14px;
+
+  width: 58px;
+  height: 58px;
+
+  color: #f7d978;
+
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+
+  flex-shrink: 0;
+}
+
+/* text */
+.detail-card p {
+  margin: 0;
+
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 0.5px;
+
+  line-height: 1.7;
+
+  color: #f7d978;
+
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+/* Text container */
+
+.detail-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  flex: 1;
+}
+/* Responsive */
+/* =========================
+   LARGE DESKTOP (1400px)
+========================= */
+
+@media (max-width: 1400px) {
+  .hero-content {
+    max-width: 1100px;
+    padding: 60px 50px;
+  }
+
+  .event-title {
+    font-size: 4rem;
+  }
+
+  .couple h2 {
+    font-size: 3.2rem;
+  }
+
+  .details {
+    gap: 24px;
+  }
+}
+
+/* =========================
+   DESKTOP / LAPTOP (1200px)
+========================= */
+
+@media (max-width: 1200px) {
+  .hero-content {
+    max-width: 950px;
+    padding: 55px 35px;
+  }
+
+  .event-title {
+    font-size: 3.7rem;
+  }
+
+  .couple h2 {
+    font-size: 3rem;
+  }
+
+  .host-title {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    gap: 22px;
+  }
+
+  .detail-card {
+    padding: 24px 18px;
+  }
+}
+/* =========================
+   TABLET / SMALL LAPTOP
+========================= */
+
+@media (max-width: 900px) {
+  .hero-content {
+    max-width: 900px;
+    padding: 40px 35px;
+  }
+
+  .details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .couple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .couple h2 {
+    font-size: 3rem;
+  }
+
+  .arabic-bismi {
+    font-size: 1.8rem;
+  }
+
+  .event-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 773px) {
+  .hero-content {
+    max-width: 900px;
+    padding: 40px 37px;
+  }
+  .detail-card {
+    width: 70%;
+    margin: auto;
+    gap: 15px;
+    padding: 25px 40px; /* top-bottom | left-right */
+  }
+  .detail-card svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  /* text */
+  .detail-card p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  .details {
+    grid-template-columns: minmax(280px, 90%);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .couple {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .couple h2 {
+    font-size: 4.3rem;
+  }
+
+  .arabic-bismi {
+    font-size: 1.8rem;
+  }
+
+  .event-title {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+  .save-date-title {
+    font-size: 2rem;
+  }
+}
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 15px 0;
+  }
+
+  .hero-content {
+    padding: 35px 15px;
+  }
+
+  .arabic-bismi {
+    font-size: 1.6rem;
+    padding-bottom: 25px;
+  }
+
+  .arab-text {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .invite-text {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .host-title {
+    font-size: 1.1rem;
+  }
+
+  .host-text {
+    font-size: 0.9rem;
+  }
+
+  .event-title {
+    font-size: 3rem;
+    padding-bottom: 40px;
+  }
+
+  .couple {
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+
+  .couple h2 {
+    font-size: 3rem;
+  }
+
+  .couple h2 span {
+    font-size: 1rem;
+  }
+
+  .heart {
+    font-size: 3rem;
+  }
+
+  .details {
+    grid-template-columns: minmax(280px, 90%);
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0 0px;
+  }
+
+  .detail-card {
+    height: 150px; /* Same height for all cards */
+    min-height: 130px;
+    padding: 25px 0px;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-card p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .detail-card svg {
+    align-self: center;
+  }
+  .save-date-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+   380px and below
+========================= */
+
+@media (max-width: 380px) {
+  .hero {
+    padding: 40px 15px 0;
+  }
+
+  .hero-content {
+    padding: 35px 15px;
+  }
+
+  .arabic-bismi {
+    font-size: 1.6rem;
+    padding-bottom: 25px;
+  }
+
+  .arab-text {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .invite-text {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .host-title {
+    font-size: 1.1rem;
+  }
+
+  .host-text {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+  }
+
+  .event-title {
+    font-size: 2.67rem;
+    padding-bottom: 30px;
+    padding-top: 1px;
+    word-break: normal;
+    line-height: 1;
+  }
+
+  .couple {
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+
+  .couple h2 {
+    font-size: 3rem;
+  }
+
+  .couple h2 span {
+    font-size: 1rem;
+  }
+
+  .heart {
+    font-size: 3rem;
+  }
+
+  .details {
+    grid-template-columns: minmax(280px, 90%);
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0 0px;
+  }
+
+  .detail-card {
+    height: 150px; /* Same height for all cards */
+    min-height: 130px;
+    padding: 25px 0px;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-card p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .detail-card svg {
+    align-self: center;
+  }
+  .save-date-title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 347px) {
+  .event-title {
+    font-size: 2.29rem;
+    padding-bottom: 30px;
+    padding-top: 1px;
+    word-break: normal;
+    line-height: 1;
+  }
+
+  .couple {
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+
+  .couple h2 {
+    font-size: 2.57rem;
+  }
+
+  .save-date-title {
+    font-size: 1.4rem;
+  }
+}

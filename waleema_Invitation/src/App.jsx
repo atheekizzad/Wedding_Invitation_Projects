@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import LandingPage from "./components/LandingPage";
 import "./App.css";
 

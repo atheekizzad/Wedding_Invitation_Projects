@@ -4,7 +4,7 @@ import "../components/css/Countdown.css";
 
 function Countdown() {
   // Change this to your wedding date
-  const weddingDate = new Date("August 9, 2026 11:30:00").getTime();
+  const weddingDate = new Date("August 9, 2026 11:30:00 AM").getTime();
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();

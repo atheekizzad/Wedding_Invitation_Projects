@@ -19,7 +19,7 @@ function Location() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Waleema Reception Venue
+        Nikkah Reception Venue
       </motion.h2>
 
       <motion.p
@@ -30,8 +30,7 @@ function Location() {
         viewport={{ once: true }}
       >
         With the blessings of Allah, we warmly invite you to join us for the
-        Waleema celebration. Your presence will make this occasion truly
-        memorable
+        Nikkah Ceremony. Your presence will make this occasion truly memorable.
       </motion.p>
 
       <div className="location-container">
@@ -63,11 +62,9 @@ function Location() {
             <div>
               <h5>Venue</h5>
 
-              <p>Diyakata Pahana Resort</p>
+              <p> Bride's Residence</p>
 
-              <small>
-                Medawachiya Junction , Anuradhapura Road , Horowpothana
-              </small>
+              <small>No 7, Vavuniya Road , Kivlekada , Horowpothana</small>
             </div>
           </div>
 
@@ -78,7 +75,7 @@ function Location() {
               <h5>Date</h5>
 
               <p>
-                Sunday , 9<sup>th</sup> August 2026
+                Saturday , 8<sup>th</sup> August 2026
               </p>
             </div>
           </div>
@@ -89,12 +86,12 @@ function Location() {
             <div>
               <h5>Reception</h5>
 
-              <p>11:30 AM onwards</p>
+              <p>12:00 PM onwards</p>
             </div>
           </div>
           <div className="direction-btn">
             <a
-              href="https://maps.app.goo.gl/ogUGEsJTLPa7ECjG9"
+              href="https://maps.app.goo.gl/4bcvApZkMRjvWP5p7"
               target="_blank"
               rel="noreferrer"
             >
@@ -125,11 +122,12 @@ function Location() {
         >
           <iframe
             title="Diyakata Pahana Resort Wedding Venue"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.559380043218!2d80.82202557477466!3d8.542084491501141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb8775750db14d%3A0x377b8e45c9e7b931!2sDiyakata%20Pahana%20Resort!5e0!3m2!1sen!2slk!4v1783591081689!5m2!1sen!2slk"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d10972.6955475233626!2d80.82047253856382!3d8.558338997871381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzMnMzAuMCJOIDgwwrA0OScxOC4zIkU!5e0!3m2!1sen!2slk!4v1784733481208!5m2!1sen!2slk"
+            allowfullscreen=""
             loading="lazy"
             allowFullScreen
-            referrerPolicy="strict-origin-when-cross-origin"
-          />
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
         </motion.div>
       </div>
     </section>

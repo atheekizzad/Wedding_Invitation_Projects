@@ -10,10 +10,10 @@ function LandingPage({ onOpen, closing }) {
           <div className="left-content">
             <h1>Wedding Invitation</h1>
 
-            <p className="ceremony">Waleema Ceremony</p>
+            <p className="ceremony">Nikkah Ceremony</p>
 
             <p className="date">
-              Sunday , <span>9</span> August <span>2026</span>
+              Saturday , <span>8</span> August <span>2026</span>
             </p>
           </div>
         </div>

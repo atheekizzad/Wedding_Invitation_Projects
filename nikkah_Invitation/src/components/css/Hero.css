@@ -17,11 +17,20 @@
   background:
     linear-gradient(
       180deg,
+      rgba(160, 222, 168, 0.422) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("../../assets/background.jpg");
+  /*
+        linear-gradient(
+      180deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.6) 50%,
       rgba(0, 0, 0, 0.85) 100%
     ),
     url("../../assets/background.jpg");
+    */
 
   background-size: cover;
   background-position: center;
@@ -50,7 +59,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 950px;
+  max-width: 1100px;
   padding: 60px 45px;
   text-align: center;
   color: white;
@@ -94,6 +103,8 @@
   font-family: "Cinzel", serif;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  letter-spacing: 2px;
+  line-height: 50px;
 }
 
 .host-text {
@@ -188,7 +199,7 @@
 .save-date-title {
   text-align: center;
 
-  font-family: "Italiana", serif;
+  font-family: serif;
 
   font-size: 1.8rem;
 

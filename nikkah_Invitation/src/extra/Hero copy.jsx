@@ -5,15 +5,15 @@ import {
   FaCalendarAlt,
   FaClock,
   FaMapMarkerAlt,
-  FaRegHeart,
 } from "react-icons/fa";
-import { FaHeartCirclePlus } from "react-icons/fa6";
-import "./css/Hero.css";
 
-import Countdown from "./Countdown";
-import Location from "./Location";
-import Verse from "./Verse";
-import Download from "./Download";
+import "./css/Hero.css";
+import { lazy, Suspense } from "react";
+
+const Countdown = lazy(() => import("../components/Countdown"));
+const Location = lazy(() => import("../components/Location"));
+const Verse = lazy(() => import("../components/Verse"));
+const Download = lazy(() => import("../components/Download"));
 
 function Hero() {
   return (
@@ -98,8 +98,7 @@ function Hero() {
               delay: 0.7,
             }}
           >
-            Marhoom Y. Abdhul Kaffoor
-            <br />& Mrs. Abdhul Kaffoor
+            AL-Haj Mr. & Mrs. A. M. A. Atheek
           </motion.h3>
           <motion.p
             className="host-text"
@@ -129,7 +128,7 @@ function Hero() {
               delay: 0.7,
             }}
           >
-            Nikkah Ceremony
+            Waleema Ceremony
           </motion.h3>
 
           {/* Couple */}
@@ -213,7 +212,7 @@ function Hero() {
               <FaClock />
 
               <div>
-                <p>12 : 00 PM</p>
+                <p>11 : 30 AM</p>
               </div>
             </motion.div>
             <motion.div
@@ -227,8 +226,8 @@ function Hero() {
 
               <div>
                 <p>
-                  Saturday
-                  <br />8<sup>th</sup> August 2026
+                  Sunday
+                  <br />9<sup>th</sup> August 2026
                 </p>
               </div>
             </motion.div>
@@ -244,9 +243,7 @@ function Hero() {
 
               <div>
                 <p>
-                  Bride's Residence
-                  <br />
-                  Kivlekada
+                  Diyakata Pahana Resort
                   <br />
                   Horowpothana
                 </p>
@@ -256,10 +253,12 @@ function Hero() {
         </motion.div>
       </section>
 
-      <Countdown />
-      <Verse />
-      <Location />
-      <Download />
+      <Suspense fallback={<h1 style={{ color: "white" }}>....loading</h1>}>
+        <Countdown />
+        <Verse />
+        <Location />
+        <Download />
+      </Suspense>
     </div>
   );
 }

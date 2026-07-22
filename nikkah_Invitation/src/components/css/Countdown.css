@@ -1,0 +1,441 @@
+/* ===========================
+   COUNTDOWN SECTION
+=========================== */
+
+.countdown {
+  width: 100%;
+  padding: 0px 20px 0px;
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Title */
+
+.countdown .section-titles {
+  font-family: "Great Vibes", cursive;
+
+  font-size: 4.4rem;
+
+  /*color: #ffd700;*/
+  color: #f5d56f;
+
+  margin-bottom: 15px;
+
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Description */
+
+.countdown-text {
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 35px;
+}
+
+/* ===========================
+   COUNTDOWN BOX CONTAINER
+=========================== */
+
+.countdown-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+  margin-bottom: 0px;
+}
+
+/* ===========================
+   TIME CARD
+=========================== */
+
+.time-card {
+  width: 160px;
+
+  height: 160px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 215, 0, 0.25),
+    rgba(255, 255, 255, 0.08)
+  );
+
+  border: 1px solid rgba(255, 215, 0, 0.5);
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.4s ease;
+
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.time-card:hover {
+  transform: translateY(-12px) scale(1.05);
+
+  box-shadow:
+    0 0 25px rgba(212, 175, 55, 0.35),
+    0 0 50px rgba(247, 217, 120, 0.18),
+    0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Shine animation */
+
+.time-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 80px;
+
+  height: 200%;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  transform: rotate(35deg);
+
+  left: -120px;
+
+  transition: 0.8s;
+}
+
+.time-card:hover::before {
+  left: 140%;
+}
+
+/* Number */
+
+.time-card h1 {
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+
+  font-size: 55px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  margin-bottom: 10px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* Label */
+
+.time-card span {
+  position: relative;
+
+  z-index: 2;
+
+  color: #ffd700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transform: translateX(1px);
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+.time-card:nth-child(1) {
+  animation: floatCard 5s infinite ease-in-out;
+}
+
+.time-card:nth-child(2) {
+  animation: floatCard 5s infinite ease-in-out 0.5s;
+}
+
+.time-card:nth-child(3) {
+  animation: floatCard 5s infinite ease-in-out 1s;
+}
+
+.time-card:nth-child(4) {
+  animation: floatCard 5s infinite ease-in-out 1.5s;
+}
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1400px) {
+  .countdown .section-titles {
+    font-size: 4rem;
+  }
+
+  .time-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .time-card h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .countdown .section-titles {
+    font-size: 3.7rem;
+  }
+
+  .time-card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .time-card h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 900px) {
+  .countdown {
+    padding: 5px 20px;
+  }
+
+  .countdown .section-titles {
+    font-size: 3.3rem;
+  }
+
+  .countdown-text {
+    font-size: 1rem;
+  }
+
+  .countdown-container {
+    gap: 18px;
+  }
+
+  .time-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .time-card h1 {
+    font-size: 38px;
+  }
+
+  .time-card span {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .countdown {
+    padding: 1px 15px;
+  }
+
+  .countdown .section-titles {
+    font-size: 2.9rem;
+  }
+
+  .countdown-text {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .countdown-container {
+    gap: 15px;
+  }
+
+  .time-card {
+    width: 110px;
+    height: 110px;
+    border-radius: 22px;
+  }
+
+  .time-card h1 {
+    font-size: 32px;
+  }
+
+  .time-card span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 517px) {
+  .time-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+  }
+
+  .time-card h1 {
+    font-size: 30px;
+  }
+
+  .time-card span {
+    font-size: 10px;
+    letter-spacing: 1.3px;
+  }
+}
+@media (max-width: 513px) {
+  .countdown .section-titles {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 477px) {
+  .time-card {
+    width: 92px;
+    height: 92px;
+    border-radius: 18px;
+  }
+
+  .time-card h1 {
+    font-size: 28px;
+  }
+
+  .time-card span {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+  }
+}
+@media (max-width: 448px) {
+  .time-card {
+    width: 83px;
+    height: 83px;
+    border-radius: 16px;
+  }
+
+  .time-card h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .time-card span {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 412px) {
+  .countdown .section-titles {
+    font-size: 2.1rem;
+  }
+  .time-card {
+    width: 76px;
+    height: 76px;
+    border-radius: 15px;
+  }
+
+  .time-card h1 {
+    font-size: 24px;
+  }
+
+  .time-card span {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .countdown .section-titles {
+    font-size: 2rem;
+  }
+
+  .countdown-text {
+    font-size: 0.8rem;
+  }
+
+  .countdown-container {
+    gap: 10px;
+  }
+
+  .time-card {
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+  }
+
+  .time-card h1 {
+    font-size: 22px;
+  }
+
+  .time-card span {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+}
+@media (max-width: 360px) {
+  .countdown .section-titles {
+    font-size: 1.8rem;
+  }
+  .time-card {
+    width: 68px;
+    height: 68px;
+    border-radius: 13px;
+  }
+
+  .time-card h1 {
+    font-size: 21px;
+  }
+
+  .time-card span {
+    font-size: 7px;
+  }
+}
+@media (max-width: 341px) {
+  .countdown .section-titles {
+    font-size: 1.8rem;
+  }
+
+  .time-card {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+  }
+
+  .time-card h1 {
+    font-size: 19px;
+    margin-bottom: 3px;
+  }
+
+  .time-card span {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+}

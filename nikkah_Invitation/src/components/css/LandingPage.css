@@ -28,9 +28,6 @@
   position: relative;
 
   perspective: 1600px;
-  overflow: hidden;
-
-  transform: translateZ(0);
 }
 
 /* =====================
@@ -42,27 +39,22 @@
 
   top: 0;
 
-  position: absolute;
-  top: 0;
-
   width: 50%;
   height: 100%;
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   background: linear-gradient(135deg, #560321, #2b0012);
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   transition: transform 1.8s cubic-bezier(0.77, 0, 0.18, 1);
-
-  will-change: transform;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
 }
 
 /* LEFT DOOR */
@@ -142,7 +134,7 @@
 /* MIDDLE CONTENT */
 @font-face {
   font-family: "Nautilus Pompilius";
-  src: url("../../assets/fonts/Nautilus.otf") format("opentype");
+  src: url("../../assets/fonts/Nautilus.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -255,7 +247,6 @@
     drop-shadow(0 0 18px rgba(247, 217, 120, 0.4));
 
   animation: heartBeat 1.5s infinite ease-in-out;
-  will-change: transform;
 }
 /* HEARTBEAT */
 
@@ -316,23 +307,20 @@
 .door-handle img {
   width: 200px;
   height: 200px;
-
   object-fit: contain;
-
-  filter: drop-shadow(0 0 15px #d4af37);
-
   animation: sealBreath 2.8s ease-in-out infinite;
-
-  will-change: transform;
+  filter: drop-shadow(0 0 10px #d4af37);
 }
 @keyframes sealBreath {
   0%,
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 10px #d4af37);
   }
 
   50% {
-    transform: scale(1.08);
+    transform: scale(1.08) rotate(2deg);
+    filter: drop-shadow(0 0 22px #f6d76b);
   }
 }
 /* Seal */

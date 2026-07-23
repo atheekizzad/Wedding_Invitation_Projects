@@ -1,6 +1,6 @@
 import "./css/LandingPage.css";
 import { FaHeart } from "react-icons/fa";
-import seal from "../assets/seal.png";
+import seal from "../assets/seal.webp";
 function LandingPage({ onOpen, closing }) {
   return (
     <section className={`landing ${closing ? "open" : ""}`}>

@@ -67,7 +67,7 @@ function Hero() {
               delay: 0.3,
             }}
           >
-            In the name of ALLAH, the Most Merciful and the Most Beneficient
+            In the name of Allah the Most Compassionate and the Most Merciful
           </motion.p>
           <motion.p
             className="invite-text"
@@ -99,7 +99,7 @@ function Hero() {
             }}
           >
             Marhoom Y. Abdhul Kaffoor
-            <br />& Mrs. Abdhul Kaffoor
+            <br />& Mrs. Y. Abdhul Kaffoor
           </motion.h3>
           <motion.p
             className="host-text"
@@ -137,7 +137,7 @@ function Hero() {
             <motion.h2
               initial={{
                 opacity: 0,
-                x: -120,
+                x: 120,
               }}
               animate={{
                 opacity: 1,
@@ -147,12 +147,10 @@ function Hero() {
                 duration: 1,
               }}
             >
-              Mohamed Izzad
-              <br />
+              Siththi Riskana
               <span>
-                Beloved son of
-                <br />
-                Mr. & Mrs. A. M. A. Atheek
+                Beloved Daughter of <br />
+                Late Mr. Y. A. Kaffoor <br />& Mrs. Y. A. Kaffoor
               </span>
             </motion.h2>
 
@@ -171,11 +169,10 @@ function Hero() {
             >
               <FaHeart className="heart" />
             </motion.div>
-
             <motion.h2
               initial={{
                 opacity: 0,
-                x: 120,
+                x: -120,
               }}
               animate={{
                 opacity: 1,
@@ -185,11 +182,10 @@ function Hero() {
                 duration: 1,
               }}
             >
-              Siththi Riskana
+              Mohamed Izzad
               <span>
-                Beloved Daughter of
-                <br />
-                Late Mr. & Mrs. A.Kaffoor
+                Beloved son of <br /> Mr. A. M. A. Atheek <br /> & Mrs. A. M. A.
+                Atheek
               </span>
             </motion.h2>
           </div>

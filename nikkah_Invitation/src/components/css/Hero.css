@@ -103,8 +103,7 @@
   font-family: "Cinzel", serif;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  letter-spacing: 2px;
-  line-height: 50px;
+  line-height: 1.5;
 }
 
 .host-text {
@@ -531,7 +530,7 @@
   }
 
   .heart {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .details {
@@ -626,7 +625,7 @@
   }
 
   .heart {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .details {
@@ -679,5 +678,11 @@
 
   .save-date-title {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 343px) {
+  .host-title {
+    font-size: 1.05rem;
   }
 }

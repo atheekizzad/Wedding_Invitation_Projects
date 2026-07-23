@@ -671,7 +671,16 @@
     font-size: 1.06rem;
   }
 }
-
+@media (max-width: 395px) {
+  .info-item small {
+    font-size: 0.784rem;
+  }
+}
+@media (max-width: 385px) {
+  .info-item small {
+    font-size: 0.764rem;
+  }
+}
 /* ==========================
    EXTRA SMALL 380px
 ========================== */

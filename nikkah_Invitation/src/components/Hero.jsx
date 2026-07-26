@@ -67,7 +67,7 @@ function Hero() {
               delay: 0.3,
             }}
           >
-            In the name of Allah the Most Compassionate and the Most Merciful
+            In the Name of Allah the Most Beneficent and the Most Merciful
           </motion.p>
           <motion.p
             className="invite-text"

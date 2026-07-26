@@ -14,7 +14,7 @@
 
   overflow: hidden;
 
-  background: #ffffff;
+  background: #160806;
 }
 
 /* =====================
@@ -48,6 +48,12 @@
 
   align-items: center;
 
+  background: linear-gradient(135deg, #560321, #2b0012);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   transition: transform 1.8s cubic-bezier(0.77, 0, 0.18, 1);
 }
 
@@ -56,22 +62,9 @@
 .left-door {
   left: 0;
   border-right: 8px solid transparent;
-  border-image: radial-gradient(
-      ellipse,
-      #8b2740 0%,
-      #741a33 25%,
-      #5e1228 50%,
-      #48101d 75%,
-      #2f0712 100%
-    )
-    1;
+  border-image: linear-gradient(180deg, #e0bc06, #d4af37, #8c6b1f, #cd9d0d) 1;
   transform-origin: left center;
   position: absolute;
-  background-image: url("../../assets/door.webp");
-
-  background-size: cover;
-  background-position: left top; /* Keeps the left side visible */
-  background-repeat: no-repeat;
 }
 
 /* RIGHT DOOR */
@@ -79,23 +72,9 @@
 .right-door {
   right: 0;
   border-left: 8px solid transparent;
-  border-image: radial-gradient(
-      ellipse,
-      #8b2740 0%,
-      #741a33 25%,
-      #5e1228 50%,
-      #48101d 75%,
-      #2f0712 100%
-    )
-    1;
-
+  border-image: linear-gradient(180deg, #e0bc06, #d4af37, #8c6b1f, #cd9d0d) 1;
   transform-origin: right center;
   position: absolute;
-
-  background-image: url("../../assets/door.webp");
-  background-size: cover;
-  background-position: right top; /* Keeps the left side visible */
-  background-repeat: no-repeat;
 }
 
 /* =====================
@@ -143,15 +122,13 @@
 
   font-size: 80px;
 
-  font-weight: 600;
+  font-weight: 400;
 
-  color: #6b1026;
+  color: #d6b45c;
 
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.25),
-    0 4px 8px rgba(0, 0, 0, 0.28),
-    0 0 15px rgba(107, 16, 38, 0.25);
   white-space: nowrap;
+
+  text-shadow: 0 5px 20px black;
 }
 
 /* MIDDLE CONTENT */
@@ -168,14 +145,10 @@
   top: 62%;
 
   left: 50%;
-
+  text-shadow: 0 5px 20px black;
   transform: translate(-50%, -50%);
 
-  color: #7b1932;
-
-  text-shadow:
-    0 2px 5px rgba(255, 255, 255, 0.18),
-    0 3px 8px rgba(0, 0, 0, 0.22);
+  color: #c9a227;
 
   font-family: "Nautilus Pompilius", cursive;
 
@@ -194,14 +167,10 @@
   top: 72%;
 
   left: 50%;
-
+  text-shadow: 0 5px 20px black;
   transform: translateX(-50%);
 
-  color: #81203a;
-
-  text-shadow:
-    0 2px 5px rgba(255, 255, 255, 0.15),
-    0 3px 8px rgba(0, 0, 0, 0.22);
+  color: #b8860b;
 
   font-family: "Nautilus Pompilius", cursive;
 
@@ -212,14 +181,10 @@
 }
 
 .date span {
-  color: #81203a;
-
-  text-shadow:
-    0 2px 5px rgba(255, 255, 255, 0.15),
-    0 3px 8px rgba(0, 0, 0, 0.22);
+  color: #b8860b;
+  text-shadow: 0 5px 20px black;
   font-size: 32px;
 }
-
 /* =====================
         RIGHT DOOR
 ===================== */
@@ -253,12 +218,9 @@
   font-weight: 400;
 
   line-height: 1;
-  color: #5a0d22;
+  color: #d6b45c;
 
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.25),
-    0 5px 10px rgba(0, 0, 0, 0.3),
-    0 0 15px rgba(90, 13, 34, 0.2);
+  text-shadow: 0 5px 20px black;
 }
 /* =====================
         HEART ICON
@@ -280,14 +242,9 @@
 .hearts {
   font-size: 55px;
 
-  color: #6b1026;
-
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.18),
-    0 2px 6px rgba(0, 0, 0, 0.35),
-    0 0 10px rgba(107, 16, 38, 0.45);
-
-  filter: drop-shadow(0 0 8px rgba(90, 13, 34, 0.35));
+  color: #d4af37;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.7))
+    drop-shadow(0 0 18px rgba(247, 217, 120, 0.4));
 
   animation: heartBeat 1.5s infinite ease-in-out;
 }
@@ -362,7 +319,7 @@
   }
 
   50% {
-    transform: scale(1.08) rotate(0.1deg);
+    transform: scale(1.08) rotate(2deg);
     filter: drop-shadow(0 0 22px #f6d76b);
   }
 }
@@ -408,11 +365,7 @@
   font-size: 25px;
   font-weight: 500;
   animation: tapFloat 2.8s ease-in-out infinite;
-  color: #7a1d37;
-
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.35),
-    0 3px 6px rgba(0, 0, 0, 0.2);
+  color: #fcfbfb;
 }
 
 @keyframes tapFloat {

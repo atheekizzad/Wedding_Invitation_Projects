@@ -13,15 +13,23 @@
 .cover-all {
   width: 100%;
   min-height: 100vh;
-
   background:
     linear-gradient(
       180deg,
-      rgba(160, 222, 168, 0.422) 0%,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.58) 50%,
+      rgba(0, 0, 0, 0.75) 100%
+    ),
+    url("../../assets/dropLarge.webp");
+
+  /*background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.6) 50%,
       rgba(0, 0, 0, 0.85) 100%
     ),
-    url("../../assets/background.jpg");
+    url("../../assets/dropLarge.png");*/
   /*
         linear-gradient(
       180deg,
@@ -480,6 +488,20 @@
 ========================= */
 
 @media (max-width: 600px) {
+  .cover-all {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.58) 50%,
+        rgba(0, 0, 0, 0.75) 100%
+      ),
+      url("../../assets/dropSmall.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .hero {
     padding: 40px 15px 0;
   }

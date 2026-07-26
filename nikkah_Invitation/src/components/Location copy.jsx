@@ -30,7 +30,7 @@ function Location() {
         viewport={{ once: true }}
       >
         With the blessings of Allah, we warmly invite you to join us for the
-        Nikkah Ceremony . Your presence will make this occasion truly memorable.
+        Nikkah Ceremony. Your presence will make this occasion truly memorable.
       </motion.p>
 
       <div className="location-container">

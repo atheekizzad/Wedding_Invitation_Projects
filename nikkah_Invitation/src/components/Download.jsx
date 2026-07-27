@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import invitationImage from "../assets/Invitation.jpeg";
+import invitationImage from "../assets/Invitation.png";
 import "./css/Download.css";
 import { FaCheckCircle, FaDownload, FaSpinner } from "react-icons/fa";
 

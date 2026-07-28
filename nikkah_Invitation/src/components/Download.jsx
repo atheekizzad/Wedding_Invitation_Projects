@@ -13,12 +13,13 @@ function Download() {
 
     const link = document.createElement("a");
 
-    link.href = "/Invitation.png";
+    link.href = "/Wedding-Invitation.png";
     link.download = "Wedding-Invitation.png";
 
+    document.body.appendChild(link);
     setTimeout(() => {
       link.click();
-
+      document.body.removeChild(link);
       setLoading(false);
       setDownloaded(true);
 

@@ -13,8 +13,8 @@ function Download() {
 
     const link = document.createElement("a");
 
-    link.href = "/Wedding-Invitation.png";
-    link.download = "Wedding-Invitation.png";
+    link.href = "/Wedding-Invitation.jpeg";
+    link.download = "Wedding-Invitation.jpeg";
 
     document.body.appendChild(link);
     setTimeout(() => {

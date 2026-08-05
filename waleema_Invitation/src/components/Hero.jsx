@@ -99,7 +99,7 @@ function Hero() {
             }}
           >
             AL-HAJ Mr. A. M. A. Atheek
-            <br />& & AL-Hajjah Mrs. A. M. A. Atheek
+            <br />& AL-Hajjah Mrs. A. M. A. Atheek
           </motion.h3>
           <motion.p
             className="host-text"

@@ -67,7 +67,7 @@ function Hero() {
               delay: 0.3,
             }}
           >
-            In the name of ALLAH, the Most Merciful and the Most Beneficient
+            In the Name of Allah the Most Beneficent and the Most Merciful
           </motion.p>
           <motion.p
             className="invite-text"
@@ -98,7 +98,8 @@ function Hero() {
               delay: 0.7,
             }}
           >
-            AL-Haj Mr. & Mrs. A. M. A. Atheek
+            AL-HAJ Mr. A. M. A. Atheek
+            <br />& & AL-Hajjah Mrs. A. M. A. Atheek
           </motion.h3>
           <motion.p
             className="host-text"
@@ -149,9 +150,8 @@ function Hero() {
               Mohamed Izzad
               <br />
               <span>
-                Beloved son of
-                <br />
-                Mr. & Mrs. A. M. A. Atheek
+                Beloved son of <br /> Mr. A. M. A. Atheek <br /> & Mrs. A. M. A.
+                Atheek
               </span>
             </motion.h2>
 
@@ -186,9 +186,8 @@ function Hero() {
             >
               Siththi Riskana
               <span>
-                Beloved Daughter of
-                <br />
-                Late Mr. & Mrs. A.Kaffoor
+                Beloved Daughter of <br />
+                Late Mr. Y. A. Kaffoor <br />& Mrs. Y. A. Kaffoor
               </span>
             </motion.h2>
           </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import invitationImage from "../assets/background.jpg";
+
 import "./css/Download.css";
 import { FaCheckCircle, FaDownload, FaSpinner } from "react-icons/fa";
 
@@ -13,9 +13,9 @@ function Download() {
 
     const link = document.createElement("a");
 
-    link.href = invitationImage;
+    link.href = "/Wedding-Invitation.png";
     link.download = "Wedding-Invitation.png";
-
+    document.body.appendChild(link);
     setTimeout(() => {
       link.click();
 
